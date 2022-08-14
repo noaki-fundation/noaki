@@ -1,0 +1,13 @@
+{
+    "global": {
+        "signIn": "sign in"
+    },
+    "navbar": {
+        "platforms": "platforms",
+        "features": "features",
+        "pricing": "pricing"
+    },
+    "main": {
+        
+    }
+}

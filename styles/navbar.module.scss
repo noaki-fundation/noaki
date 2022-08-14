@@ -1,0 +1,17 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-between;
+
+    .branding {
+        font-size: larger;
+        font-weight: bold;
+    }
+    
+    .list {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+}
