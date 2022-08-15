@@ -1,3 +1,20 @@
+:root {
+  --main-color: #000000;
+  --invert-color: #ffffff;
+  --main-bg-color: #ffffff;
+  --invert-bg-color: #000116;
+  --color-scheme: light;
+}
+
+html {
+  color-scheme: var(--color-scheme);
+}
+
+body {
+  color: var(--main-color);
+  background: var(--main-bg-color);
+}
+
 html,
 body {
   padding: 0;
@@ -17,11 +34,11 @@ a {
 }
 
 @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
+  :root {
+    --main-color: #ffffff;
+    --invert-color: #000000;
+    --main-bg-color: #000116;
+    --invert-bg-color: #ffffff;
+    --color-scheme: dark;
   }
 }

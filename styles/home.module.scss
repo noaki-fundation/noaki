@@ -1,0 +1,22 @@
+.container {
+    width: 100vw;
+    height: calc(100vh - 95px - 30px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .inputPlaylist {
+        justify-self: center;
+        align-self: center;
+        input {
+            width: 70vw;
+            background-color: var(--invert-color);
+            color: var(--main-color);
+            border: 1px solid var(--main-color);
+            border-top-width: 0px;
+            border-right-width: 0px;
+            border-left-width: 0px;
+            outline: none;
+        }
+    }
+}

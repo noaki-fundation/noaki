@@ -9,5 +9,6 @@ declare global {
             value?: string;
         }) => void;
         dataLayer: {event: string, page: string}[];
+        opera?: string;
     }
 }

@@ -1,0 +1,15 @@
+@mixin useMainTheme($withInvertInHover: false) {
+    background-color: var(--main-bg-color);
+    color: var(--maing-color);
+
+    @if $withInvertInHover {
+        &:hover {
+            @include useRevertTheme();
+        }
+    }
+}
+
+@mixin useRevertTheme() {
+    background-color: var(--invert-bg-color);
+    color: var(--invert-color);
+}

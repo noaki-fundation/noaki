@@ -1,6 +1,8 @@
 {
     "global": {
-        "signIn": "sign in"
+        "signIn": "sign in",
+        "tos": "terms",
+        "privacy": "privacy"
     },
     "navbar": {
         "platforms": "platforms",
@@ -8,6 +10,11 @@
         "pricing": "pricing"
     },
     "main": {
-        
-    }
+        "enterLinkOfPlaylist": "Enter playlist link to convert",
+        "next": "next"
+    },
+    "termsTitle": "Terms of service",
+    "terms": "Hello world !",
+    "privacyTitle": "Privacy",
+    "privacy": "Hello world !"
 }
