@@ -4,8 +4,8 @@ import rosetta from 'rosetta';
 const i18n = rosetta();
 
 export const defaultLanguage = 'en';
-export const languages = ['fr', 'en'];
-export const contentLanguageMap = { fr: 'fr-FR', en: 'en-US' };
+export const languages = ['en'];
+export const contentLanguageMap = { en: 'en-US' };
 
 interface InfinityObject {
     [key: string]: InfinityObject | string;
