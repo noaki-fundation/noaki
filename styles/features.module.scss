@@ -1,6 +1,4 @@
 .masterContainer {
-    width: 100vw;
-    height: calc(100vh - 95px - 50px);
     display: flex;
     justify-content: center;
     .container {
@@ -55,10 +53,10 @@
 
             tr {
                 th {
-                    padding: 2rem 10px;
+                    padding: 1.2rem 10px;
                 }
                 td {
-                    height: 72px;
+                    height: 50px;
                     &:not(:first-child) div {
                         display: flex;
                         justify-content: center;

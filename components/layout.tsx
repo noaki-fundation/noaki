@@ -10,7 +10,7 @@ export default function Layout({ children }: { children: React.ReactNode }): JSX
     const i18n = useI18n() as I18nWrapper;
     
     return (
-        <>
+        <div className={styles.container}>
             <Square
                 width={150}
                 color="#A90AD0"
@@ -25,7 +25,6 @@ export default function Layout({ children }: { children: React.ReactNode }): JSX
                 top={"95vh"}
                 degree="-15deg"
             />
-            <div className={styles.blurPage} />
             <Navbar />
             {children}
             <div className={styles.informations}>
@@ -48,6 +47,7 @@ export default function Layout({ children }: { children: React.ReactNode }): JSX
                     {i18n.t('global.privacy')}
                 </Link>
             </div>
-        </>
+            <div className={styles.blurPage} />
+        </div>
     )
 }
