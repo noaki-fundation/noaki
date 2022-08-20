@@ -57,7 +57,7 @@ function App({ Component, pageProps }: AppProps) {
         strategy="afterInteractive"
         crossOrigin="anonymous"
         dangerouslySetInnerHTML={{
-          __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','${gtag.GA_TRAKING_ID})',{page_path:window.location.pathname});`
+          __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','${gtag.GA_TRAKING_ID}',{page_path:window.location.pathname});`
         }}
       />
       <I18n lngDict={pageProps.lngDict} locale={pageProps.lng}>
