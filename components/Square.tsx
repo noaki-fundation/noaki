@@ -3,8 +3,8 @@ import styles from '../styles/square.module.scss';
 interface SquareInterface {
     width: number;
     color: string;
-    left: number|string;
-    top: number|string;
+    left: number | string;
+    top: number | string;
     degree: string;
 }
 

@@ -21,8 +21,8 @@ export default function Layout({ children }: { children: React.ReactNode }): JSX
             <Square
                 width={150}
                 color="#0AD089"
-                left={"85vw"}
-                top={"85vh"}
+                left={"95vw"}
+                top={"95vh"}
                 degree="-15deg"
             />
             <div className={styles.blurPage} />

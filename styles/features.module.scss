@@ -1,0 +1,89 @@
+.masterContainer {
+    width: 100vw;
+    height: calc(100vh - 95px - 50px);
+    display: flex;
+    justify-content: center;
+    .container {
+        width: 80vw;
+        .titles {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5rem;
+        }
+    }
+    .tableContainer {
+        .table {
+            border-collapse: collapse;
+            width: 100%;
+            
+            td, th {
+                border: 1px solid #cdcdcd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            th > div {
+                font-size: 1.2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                -webkit-box-align: center;
+            }
+
+            .tableTitle > th {
+                border-left: none;
+                border-right: none;
+
+                &:first-child {
+                    border-left: 1px solid #cdcdcd;
+                }
+                &:last-child {
+                    border-right: 1px solid #cdcdcd;
+                }
+
+                div {
+                    font-size: 1.2rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    -webkit-box-pack: center;
+                    -webkit-box-align: center;
+                }
+            }
+
+            tr {
+                th {
+                    padding: 2rem 10px;
+                }
+                td {
+                    height: 72px;
+                    &:not(:first-child) div {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        -webkit-box-pack: center;
+                        -webkit-box-align: center;
+                    }
+                }
+                
+            }
+    
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+        }
+    }
+}
+
+.svgElement {
+    width: 1.5rem;
+    height: 1.5rem;
+    pointer-events: none;
+    vertical-align: none;
+    display: inline-block;
+    overflow-y: hidden;
+    color: inherit;
+    overflow-x: hidden;
+}

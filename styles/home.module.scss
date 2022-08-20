@@ -10,6 +10,7 @@
         align-self: center;
         input {
             width: 70vw;
+            height: 30px;
             background-color: var(--invert-color);
             color: var(--main-color);
             border: 1px solid var(--main-color);
@@ -17,6 +18,16 @@
             border-right-width: 0px;
             border-left-width: 0px;
             outline: none;
+        }
+        .next {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 1rem;
+            cursor: pointer;
+            p {
+                font-size: 1.2rem;
+            }
         }
     }
 }

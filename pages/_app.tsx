@@ -17,9 +17,10 @@ function App({ Component, pageProps }: AppProps) {
     }
 
     router.events.on('routeChangeComplete', handleRouteChange);
-
+    router.events.on('hashChangeComplete', handleRouteChange);
     return () => {
       router.events.off('routeChangeComplete', handleRouteChange);
+      router.events.off('hashChangeComplete', handleRouteChange);
     }
   }, [router.events]);
 
@@ -48,16 +49,15 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Script
-        strategy='afterInteractive'
+        strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRAKING_ID}`}
-        crossOrigin="anonymous"
       />
       <Script
-        id="gtag-script"
+        id="gtag-init"
         strategy="afterInteractive"
         crossOrigin="anonymous"
         dangerouslySetInnerHTML={{
-          __html: `window.dataLayer=window.dataLayer||[];function g(){dataLayer.push(arguments)};g('js',new Date());g('config','${gtag.GA_TRAKING_ID})',{page_path:window.location.pathname});`
+          __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','${gtag.GA_TRAKING_ID})',{page_path:window.location.pathname});`
         }}
       />
       <I18n lngDict={pageProps.lngDict} locale={pageProps.lng}>

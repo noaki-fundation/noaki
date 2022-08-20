@@ -13,6 +13,39 @@
         "enterLinkOfPlaylist": "Enter playlist link to convert",
         "next": "next"
     },
+    "platforms": {
+        "title": "Naoki is available on these platforms",
+        "description": "We massevly work for add new platforms"
+    },
+    "features": {
+        "title": "Features of our application",
+        "table": {
+            "headers": {
+                "featuresList": "Features",
+                "notConnected": "Not connected",
+                "free": "free",
+                "premium": "premium"
+            },
+            "playlistTitle": "Playlist",
+            "mergePlaylist": "Merge playlist",
+            "numberOfPlaylist": "Number of playlist merging par treatement",
+            "numberOfPlaylistNotConnected": "1",
+            "numberOfPlaylistFree": "5",
+            "numberOfPlaylistPremium": "∞",
+            "playlistSync": "Playlist synchronization",
+            "playlistSyncNo": "No",
+            "playlistSyncManually": "Manually",
+            "playlistSyncAutomatically": "Automatically (One time each day)",
+            "playlistOrga": "Playlist organization",
+            "mergePlaylistOnOneTime": "Merge playlist on multiple platform on one time",
+            "sharePlaylist": "Share playlist with other",
+            "accountTitle": "Account",
+            "savePlatforms": "Save platforms connexion",
+            "saveSamePlatforms": "Save same platforms",
+            "saveSamePlatformsFree": "1",
+            "saveSamePlatformsPremium": "∞"
+        }
+    },
     "termsTitle": "Terms of service",
     "terms": "Hello world !",
     "privacyTitle": "Privacy",
